@@ -1,0 +1,7 @@
+{
+  "name": "ionic-tap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
