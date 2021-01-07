@@ -12,7 +12,33 @@ import {
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { archiveOutline,
+         archiveSharp,
+         bookmarkOutline, 
+         heartOutline, 
+         heartSharp, 
+         mailOutline, 
+         mailSharp, 
+         paperPlaneOutline, 
+         paperPlaneSharp, 
+         trashOutline, 
+         trashSharp, 
+         warningOutline, 
+         warningSharp,
+         logInOutline,
+         logInSharp,
+         keyOutline,
+         keySharp,
+         cartOutline,
+         cartSharp,
+         walletOutline,
+         walletSharp,
+         peopleSharp,
+         peopleOutline,
+         logOutOutline,
+         logOutSharp,
+         homeOutline,
+         homeSharp}  from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -24,44 +50,50 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/page/Inbox',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    title: 'Login',
+    url: '/pages/Login',
+    iosIcon: logInOutline,
+    mdIcon: logInSharp
   },
   {
-    title: 'Outbox',
-    url: '/page/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
+    title: 'Home',
+    url: '/pages/Home',
+    iosIcon: homeOutline,
+    mdIcon: homeSharp
   },
   {
-    title: 'Favorites',
-    url: '/page/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    title: 'Register',
+    url: '/pages/Register',
+    iosIcon: keyOutline,
+    mdIcon: keySharp
   },
   {
-    title: 'Archived',
-    url: '/page/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    title: 'Cart',
+    url: '/pages/Cart',
+    iosIcon: cartOutline,
+    mdIcon: cartSharp
   },
   {
-    title: 'Trash',
-    url: '/page/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    title: 'Payment',
+    url: '/pages/Payment',
+    iosIcon: walletOutline,
+    mdIcon: walletSharp
   },
   {
-    title: 'Spam',
-    url: '/page/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title: 'Account',
+    url: '/pages/Account',
+    iosIcon: peopleOutline,
+    mdIcon: peopleSharp
+  },
+  {
+    title: 'Logout',
+    url: '',
+    iosIcon: logOutOutline,
+    mdIcon: logOutSharp
   }
 ];
 
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+const labels = ['Sony', 'Apple', 'Sumsung', 'Vivo', 'Nokia', 'Xioami'];
 
 const Menu: React.FC = () => {
   const location = useLocation();
