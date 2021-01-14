@@ -22,7 +22,7 @@ const Login: React.FC = () => {
 
   async function login() {
     const res = await loginUser(username, password);
-    console.log(`${res ? 'login success': 'login fail'}`);
+    console.log(res);
   }
 
   return (
@@ -47,7 +47,7 @@ const Login: React.FC = () => {
                 <IonInput type="password" onIonChange={(e:any) => setPassword(e.target.value)}></IonInput>
               </IonItem>
               <IonButton expand="block">Summit</IonButton>
-              Didn't have Account?<Link to="/register">get a new one</Link>
+              Didn't have Account?<Link to="./register">get a new one</Link>
             </IonList>
       </IonContent>
     </IonPage>

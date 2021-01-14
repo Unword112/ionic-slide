@@ -10,13 +10,13 @@ export const Slides: React.FC = () => (
   <IonContent>
     <IonSlides pager={true} options={slideOpts}>
       <IonSlide>
-        <h1>Slide 1</h1>
+        <h1>img1</h1>
       </IonSlide>
       <IonSlide>
-        <h1>Slide 2</h1>
+        <h1>img2</h1>
       </IonSlide>
       <IonSlide>
-        <h1>Slide 3</h1>
+        <h1>img3</h1>
       </IonSlide>
     </IonSlides>
   </IonContent>

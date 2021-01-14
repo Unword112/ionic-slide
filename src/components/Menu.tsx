@@ -27,7 +27,9 @@ import {
          logOutOutline,
          logOutSharp,
          homeOutline,
-         homeSharp}  from 'ionicons/icons';
+         homeSharp,
+         pricetagOutline,
+         pricetagSharp}  from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -71,8 +73,8 @@ const appPages: AppPage[] = [
   {
     title: 'Products',
     url: '/pages/Products',
-    iosIcon: walletOutline,
-    mdIcon: walletSharp
+    iosIcon: pricetagOutline,
+    mdIcon: pricetagSharp
   },
   {
     title: 'Account',

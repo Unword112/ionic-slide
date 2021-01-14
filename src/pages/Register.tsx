@@ -19,9 +19,10 @@ const Register: React.FC = () => {
   const [ username, setUsername ] = useState<string>('');
   const [ password, setPassword ] = useState<string>('');
   const [ cpassword, setcPassword ] = useState<string>('');
+  const [ email, setEmail ] = useState<string>('');
 
   function registerUser() {
-    console.log(fullname, username, password, cpassword);
+    console.log(fullname, email, username, password, cpassword);
   }
 
   return (
@@ -37,9 +38,13 @@ const Register: React.FC = () => {
 
       <IonContent fullscreen>
       <IonList>
-              <IonItem>
+                <IonItem>
                 <IonLabel position="floating">Firstname and Lastname</IonLabel>
                 <IonInput onIonChange={(e:any) => setFullname(e.target.value)}></IonInput>
+              </IonItem>
+              <IonItem>
+                <IonLabel position="floating">Email</IonLabel>
+                <IonInput onIonChange={(e:any) => setEmail(e.target.value)}></IonInput>
               </IonItem>
               <IonItem>
                 <IonLabel position="floating">Username</IonLabel>
