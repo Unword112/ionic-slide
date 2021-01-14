@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonSlides, IonSlide, IonContent } from '@ionic/react';
+import { IonSlides, IonSlide, IonContent, IonImg } from '@ionic/react';
 
 const slideOpts = {
   initialSlide: 1,

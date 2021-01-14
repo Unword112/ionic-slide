@@ -12,19 +12,8 @@ import {
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { archiveOutline,
-         archiveSharp,
+import { 
          bookmarkOutline, 
-         heartOutline, 
-         heartSharp, 
-         mailOutline, 
-         mailSharp, 
-         paperPlaneOutline, 
-         paperPlaneSharp, 
-         trashOutline, 
-         trashSharp, 
-         warningOutline, 
-         warningSharp,
          logInOutline,
          logInSharp,
          keyOutline,
@@ -76,6 +65,12 @@ const appPages: AppPage[] = [
   {
     title: 'Payment',
     url: '/pages/Payment',
+    iosIcon: walletOutline,
+    mdIcon: walletSharp
+  },
+  {
+    title: 'Products',
+    url: '/pages/Products',
     iosIcon: walletOutline,
     mdIcon: walletSharp
   },
